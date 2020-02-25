@@ -1,0 +1,8 @@
+{% extends '_base.html' %}
+{% block title %}Sing Up{% endblock title %}
+{% block content %}
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    </form>
+{% endblock %}
